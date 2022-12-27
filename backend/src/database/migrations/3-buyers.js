@@ -13,10 +13,7 @@ module.exports = {
         type: Sequelize.STRING(255),
         allowNull: false
       },
-      email: {
-        type: Sequelize.STRING(255),
-        allowNull: true
-      },
+
       tradingName: {
         type: Sequelize.STRING(255),
         allowNull: true
@@ -111,7 +108,11 @@ module.exports = {
         type: Sequelize.DATE,
         allowNull: false,
         defaultValue: Sequelize.literal('CURRENT_TIMESTAMP')
-      }
+      },
+      email: {
+        type: Sequelize.STRING(255),
+        allowNull: true
+      },
     })
   },
 
