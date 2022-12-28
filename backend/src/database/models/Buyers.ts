@@ -129,12 +129,10 @@ Buyer.init({
 }, {
   sequelize: db,
   modelName: 'buyers',
-  underscored: true,
   timestamps: false,
   createdAt: true,
   updatedAt: true,
 });
-Buyer.belongsTo(Cnpj, { foreignKey: 'cnpjId', as: 'buyers' });
-Cnpj.hasMany(Buyer, { foreignKey: 'id', as: 'users' });
+Buyer.belongsTo(Cnpj);
 
 export default Buyer;

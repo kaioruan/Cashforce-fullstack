@@ -144,12 +144,10 @@ Provider.init({
 }, {
   sequelize: db,
   modelName: 'providers',
-  underscored: true,
   timestamps: false,
   createdAt: true,
   updatedAt: true,
 });
-Provider.belongsTo(Cnpj, { foreignKey: 'cnpjId', as: 'providers' });
-Cnpj.hasMany(Provider, { foreignKey: 'id', as: 'users' });
+Provider.belongsTo(Cnpj);
 
 export default Provider;

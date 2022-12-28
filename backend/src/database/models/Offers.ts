@@ -74,14 +74,11 @@ Offer.init({
 }, {
   sequelize: db,
   modelName: 'offers',
-  underscored: true,
   timestamps: false,
   createdAt: true,
   updatedAt: true,
 });
 
-Offer.belongsTo(Order, { foreignKey: 'orderId', as: 'orders' });
-Offer.belongsTo(Sponsor, { foreignKey: 'sponsorId', as: 'sponsors' });
-Order.hasMany(Offer, { foreignKey: 'id', as: 'offers' });
-Sponsor.hasMany(Offer, { foreignKey: 'id', as: 'offers' });
+Offer.belongsTo(Order);
+Offer.belongsTo(Sponsor);
 export default Offer;

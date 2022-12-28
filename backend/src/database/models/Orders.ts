@@ -6,6 +6,7 @@ import Buyer from './Buyers';
 import Provider from './Providers';
 
 class Order extends Model {
+  [x: string]: unknown;
   id!: number;
   orderNfId!: string;
   orderNumber!: string;
@@ -135,18 +136,13 @@ Order.init({
 }, {
   sequelize: db,
   modelName: 'orders',
-  underscored: true,
   timestamps: false,
   createdAt: true,
   updatedAt: true,
 });
-Order.belongsTo(Cnpj, { foreignKey: 'cnpjId', as: 'providers' });
-Order.belongsTo(User, { foreignKey: 'userId', as: 'users' });
-Order.belongsTo(Buyer, { foreignKey: 'buyerId', as: 'buyers' });
-Order.belongsTo(Provider, { foreignKey: 'providerId', as: 'providers' });
-Cnpj.hasMany(Order, { foreignKey: 'id', as: 'users' });
-User.hasMany(Order, { foreignKey: 'id', as: 'users' });
-Buyer.hasMany(Order, { foreignKey: 'id', as: 'buyers' });
-Provider.hasMany(Order, { foreignKey: 'id', as: 'providers' });
+Order.belongsTo(Cnpj);
+Order.belongsTo(Buyer);
+Order.belongsTo(Provider);
+Order.belongsTo(User);
 
 export default Order;

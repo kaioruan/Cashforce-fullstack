@@ -24,7 +24,6 @@ Cnpj.init({
 }, {
   sequelize: db,
   modelName: 'cnpjs',
-  underscored: true,
   timestamps: false,
   createdAt: true,
   updatedAt: true,

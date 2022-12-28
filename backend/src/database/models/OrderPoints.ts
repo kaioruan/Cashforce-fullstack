@@ -44,12 +44,10 @@ OrderPoint.init({
 }, {
   sequelize: db,
   modelName: 'orderpoints',
-  underscored: true,
   timestamps: false,
   createdAt: true,
   updatedAt: true,
 });
 
-OrderPoint.belongsTo(Order, { foreignKey: 'orderId', as: 'orders' });
-Order.hasMany(OrderPoint, { foreignKey: 'id', as: 'orderpoints' });
+OrderPoint.belongsTo(Order);
 export default OrderPoint;

@@ -139,12 +139,10 @@ Sponsor.init({
 }, {
   sequelize: db,
   modelName: 'sponsors',
-  underscored: true,
   timestamps: false,
   createdAt: true,
   updatedAt: true,
 });
-Sponsor.belongsTo(Cnpj, { foreignKey: 'cnpjId', as: 'providers' });
-Cnpj.hasMany(Sponsor, { foreignKey: 'id', as: 'users' });
+Sponsor.belongsTo(Cnpj);
 
 export default Sponsor;
