@@ -66,6 +66,8 @@ module.exports = {
       cnpjId: {
         type: Sequelize.INTEGER(11),
         allowNull: true,
+        DELETE: 'CASCADE',
+        UPDATE: 'CASCADE',
         references: {
           model: 'cnpjs',
           key: 'id'
@@ -74,6 +76,8 @@ module.exports = {
       userId: {
         type: Sequelize.INTEGER(11),
         allowNull: true,
+        DELETE: 'CASCADE',
+        UPDATE: 'CASCADE',
         references: {
           model: 'users',
           key: 'id'
@@ -82,6 +86,8 @@ module.exports = {
       buyerId: {
         type: Sequelize.INTEGER(11),
         allowNull: true,
+        DELETE: 'CASCADE',
+        UPDATE: 'CASCADE',
         references: {
           model: 'buyers',
           key: 'id'
@@ -90,6 +96,8 @@ module.exports = {
       providerId: {
         type: Sequelize.INTEGER(11),
         allowNull: true,
+        DELETE: 'CASCADE',
+        UPDATE: 'CASCADE',
         references: {
           model: 'providers',
           key: 'id'

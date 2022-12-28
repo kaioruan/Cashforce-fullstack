@@ -56,6 +56,8 @@ module.exports = {
       orderId: {
         type: Sequelize.INTEGER(11),
         allowNull: false,
+        DELETE: 'CASCADE',
+        UPDATE: 'CASCADE',
         references: {
           model: 'orders',
           key: 'id'
@@ -64,6 +66,8 @@ module.exports = {
       sponsorId: {
         type: Sequelize.INTEGER(11),
         allowNull: false,
+        DELETE: 'CASCADE',
+        UPDATE: 'CASCADE',
         references: {
           model: 'sponsors',
           key: 'id'

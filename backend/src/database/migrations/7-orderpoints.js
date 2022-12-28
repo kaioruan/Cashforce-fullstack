@@ -39,6 +39,8 @@ module.exports = {
       orderId: {
         type: Sequelize.INTEGER(11),
         allowNull: false,
+        DELETE: 'CASCADE',
+        UPDATE: 'CASCADE',
         references: {
           model: 'orders',
           key: 'id'
