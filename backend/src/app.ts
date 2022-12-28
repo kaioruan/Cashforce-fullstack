@@ -1,5 +1,7 @@
 import * as express from 'express';
+import MainController from './controller/Main';
 
+const mainController = new MainController();
 class App {
   public app: express.Express;
 
@@ -9,7 +11,11 @@ class App {
     this.config();
 
     // Não remover essa rota
-    this.app.get('/', (req, res) => res.json({ ok: true }));
+    this.app.get('/', mainController.getAllNF);
+
+    // 2 dados da tabela Buyers
+    // dados da tabela orders
+    // provider
   }
 
   private config():void {
