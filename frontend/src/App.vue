@@ -1,12 +1,12 @@
 <script setup>
 import Header from "./components/HeaderComponent.vue";
+import Table from "./components/TableComponent.vue";
 </script>
 
 <template>
-  <header></header>
-
   <main>
     <Header />
+    <Table />
   </main>
 </template>
 
