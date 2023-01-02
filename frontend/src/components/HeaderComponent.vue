@@ -17,7 +17,6 @@
 .header-container {
   width: 100%;
   height: 64px;
-  border-bottom: 1px solid rgb(235, 236, 243);
 }
 .logo-container {
   max-width: 288px;
@@ -25,7 +24,6 @@
   float: left;
   left: 0;
   top: 0;
-  background-color: rgb(245, 245, 245);
 }
 
 ul {
