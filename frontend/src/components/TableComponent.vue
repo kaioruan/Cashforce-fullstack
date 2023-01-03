@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <hr />
     <div class="title">
       <h3 class="page-header">
         <img src="../images/handsTable.png" alt="hands icon" /> Notas Fiscais
@@ -93,34 +94,55 @@ export default {
   margin-top: 40px;
 }
 .page-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   font-weight: bold;
+  margin-left: 4rem;
+  margin-bottom: 0.5rem;
+}
+p {
+  margin-left: 4rem;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #727d94;
 }
 .title-text {
   font-size: 14px;
 }
 table {
-  height: 1vh;
-  width: 80%;
   border-collapse: separate;
   border-spacing: 0 1rem;
+  margin-left: 4rem;
+  width: 90%;
 }
-/* .container {
-  float: left;
-} */
-
+td:nth-child(1) {
+  padding-left: 2rem;
+}
+th:nth-child(1) {
+  padding-left: 2rem;
+}
 tr,
 td {
   font-size: 14px;
+  color: #4d5566;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "DM Sans";
+  font-style: normal;
 }
 
 .table-container {
   border-radius: 6px;
-  box-shadow: 0px 0px 1px 1px red;
+  box-shadow: 0px 0px 1px 1px #dfe2eb;
 }
 
 td,
 th {
-  /* margin-left: 100px; */
   text-align: start;
   padding: 10px 10px;
 }
@@ -131,12 +153,12 @@ th {
 }
 
 tr button {
+  width: 10rem;
   padding: 7px 15px;
-  margin-right: -70px;
   border-radius: 20px;
-  color: rgba(0, 0, 0, 0.8);
+  color: #727d94;
   background-color: white;
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  border: 1px solid #dfe2eb;
 }
 
 tr td:nth-child(5),
@@ -144,10 +166,11 @@ tr td:nth-child(6) {
   color: rgb(0, 173, 140);
 }
 
-/* .container {
-  background: red;
-  background-color: red !important;
-  box-shadow: 0px 10px 30px red;
-  border-radius: 15px 0px 0px;
-} */
+.container {
+  box-shadow: 0px 10px 30px rgba(228, 229, 231, 0.5);
+  border-radius: 15px 0px 0px 15px;
+}
+hr {
+  border: 1px solid #dfe2eb;
+}
 </style>
