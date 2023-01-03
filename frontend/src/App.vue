@@ -5,8 +5,8 @@ import Table from "./components/TableComponent.vue";
 
 <template>
   <main>
-    <Header />
-    <Table />
+    <Header class="headerComponent" />
+    <Table class="tableComponent" />
   </main>
 </template>
 
@@ -17,5 +17,20 @@ import Table from "./components/TableComponent.vue";
   border: 0;
   padding: 0;
   font-family: sans-serif;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 5rem 5rem 1fr;
+  grid-template-areas:
+    "a ."
+    "a b"
+    ". b";
+}
+.headerComponent {
+  grid-area: a;
+}
+.tableComponent {
+  grid-area: b;
 }
 </style>
