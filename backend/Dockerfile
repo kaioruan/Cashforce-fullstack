@@ -1,13 +1,12 @@
-FROM node:16.14-alpine
+FROM node:16.14.0
 
-WORKDIR /app-backend
-
-COPY package* ./
-
-RUN npm install
+WORKDIR /CASHFORCE-FULLSTACK/backend
 
 COPY . .
+
+RUN npm install
 
 EXPOSE 3001
 
 CMD ["npm", "start"]
+
