@@ -6,7 +6,6 @@ import Buyer from './Buyers';
 import Provider from './Providers';
 
 class Order extends Model {
-  [x: string]: unknown;
   id!: number;
   orderNfId!: string;
   orderNumber!: string;
