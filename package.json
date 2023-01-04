@@ -6,8 +6,8 @@
   "scripts": {
     "postinstall": "npm run install:apps",
     "install:apps": "./apps_install.sh",
-    "pretest": "(cd ./app/backend && /bin/sh tsc_eval.sh)",
-    "test": "env $(cat ./app/backend/.env) jest -i --forceExit --verbose"
+    "pretest": "(cd ./backend && npm run test)",
+    "test": "env $(cat ./backend/.env) jest -i --forceExit --verbose"
   },
   "author": "Cashforce",
   "devDependencies": {
