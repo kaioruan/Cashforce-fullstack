@@ -1,6 +1,6 @@
 export default interface Order {
   id: number;
-  nNF: string;
+  nNF: string; // eslint-disable-line 
   emissionDate: string;
   value: string;
   orderStatusBuyer: string;
