@@ -45,7 +45,7 @@ Após isso, você pode acessar a aplicação através do endereço http://localh
 # Sobre os testes
 ## Executando todos os testes
 
-Para poder executar os testes, na raiz, utilize o comando o comando `npm run test` e **todos** os seus testes serão executado.
+Para poder executar os testes, na raiz, utilize o comando o comando `npm run pretest` e **todos** os seus testes serão executado.
 
 ---
 
