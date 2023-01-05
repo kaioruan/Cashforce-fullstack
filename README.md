@@ -4,7 +4,9 @@ Esse projeto foi desenvolvido para um teste técnico!
 O desafio foi desenvolver uma aplicação fullstack onde o backend alimentava o banco de dados MySQL com informações referentes a nota fiscais de um usuário, renderizando assim, essas informações no frontend através do framework VueJS.
 
 Aqui você vai encontrar os detalhes de como foi o desenvolvimento do projeto e quais foram os requisitos técnicos necessários para a entrega do desafio.
----
+
+#Descrição:
+Aplicação Fullstack onde é possivel acessar todas notas fiscais referentes ao usuário.
 
 # Habilidades desenvolvidas
 
