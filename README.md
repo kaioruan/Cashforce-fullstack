@@ -29,7 +29,7 @@ Para iniciar o projeto, é necessário possuir o [Docker](https://docs.docker.co
 ⚠ **Atenção:** ⚠
 - Todos os seguintes comandos devem ser realizados na RAIZ DO PROJETO.
 
-**Instalação de dependências na raiz do projeto: ** 
+**Instalação de dependências na raiz do projeto:** 
 
 ```
 npm run postinstall
